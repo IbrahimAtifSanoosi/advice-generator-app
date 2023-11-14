@@ -1,0 +1,137 @@
+/* Start Variables */
+:root {
+    --grayish-blue: hsl(217, 19%, 38%);
+    --dark-grayish-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+    --font-size: 20px;
+    --bold-weight: 400;
+    --bolder-weight: 800;
+}
+
+/* End Variables */
+/* Start Global Rules */
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Small */
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* End Global Rules */
+
+.container {
+    background-color: var(--dark-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.advice {
+    background-color: var(--dark-grayish-blue);
+    max-width: 450px;
+    /* height: 300px; */
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+@media (max-width: 767px) {
+    .advice {
+        max-width: 300px;
+    }
+}
+
+.container .advice h3 {
+    display: flex;
+    justify-content: center;
+    color: rgb(98, 168, 98);
+    font-size: 18px;
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: 3px;
+}
+
+.container .advice p {
+    margin: 20px 0px;
+    font-size: var(--font-size);
+    font-weight: var(--bold-weight);
+    text-align: center;
+    color: white;
+}
+
+.container .advice .divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .advice .divider img {
+    width: 100%;
+}
+
+.container .advice .dice {
+    width: 50px;
+    background-color: rgb(98, 168, 98);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 20px auto -50px;
+    cursor: pointer;
+}
+
+.container .advice .dice:hover {
+    width: 50px;
+    background-color: rgb(98, 168, 98);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 20px auto -50px;
+    cursor: pointer;
+    filter: brightness(150%);
+}
+
+.container .advice .dice img {
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
